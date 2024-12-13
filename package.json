@@ -1,0 +1,72 @@
+{
+  "name": "pex-color",
+  "version": "2.2.0",
+  "description": "Color utilities (css, p3, hex, hsl, hsv, hwb, lab, lch, xyz, okhsl, okhsv, oklab, oklch, hpluv, hsluv, lchuv, bytes) for PEX.",
+  "keywords": [
+    "pex",
+    "color",
+    "webgl",
+    "3d",
+    "rgb",
+    "rgba",
+    "p3",
+    "rgbbytes",
+    "hsv",
+    "hsl",
+    "hwb",
+    "hex",
+    "xyz",
+    "lab",
+    "lch",
+    "cielab",
+    "oklab",
+    "oklch",
+    "okhsl",
+    "okhsv",
+    "hsluv",
+    "hpluv",
+    "cieluv",
+    "lchuv",
+    "cielchuv"
+  ],
+  "homepage": "https://github.com/pex-gl/pex-color",
+  "bugs": "https://github.com/pex-gl/pex-color/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pex-gl/pex-color.git"
+  },
+  "license": "MIT",
+  "author": "Marcin Ignac <marcin.ignac@gmail.com> (http://marcinignac.com)",
+  "contributors": [
+    "Damien Seguin (https://github.com/dmnsgn)",
+    "Szymon Kaliski <hi@szymonkaliski.com> (https://szymonkaliski.com)"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "snowdev build",
+    "dev": "snowdev dev",
+    "release": "snowdev release",
+    "test": "node --test --experimental-test-coverage test",
+    "test:watch": "node --test --watch test"
+  },
+  "devDependencies": {
+    "colorjs.io": "github:color-js/color.js"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.5.1",
+    "snowdev": ">=2.2.x"
+  },
+  "snowdev": {
+    "dependencies": []
+  }
+}
