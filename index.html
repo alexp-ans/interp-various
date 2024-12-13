@@ -150,7 +150,6 @@
       );
       const gradientTypes = [
         "Oklab",
-        "Linear",
       ];
 
       filteredTypes.forEach((type) => {
@@ -162,7 +161,7 @@
 
       gradientTypes.forEach((type) => {
         const canvasElement = document.createElement("canvas");
-        canvasElement.width = 512;
+        canvasElement.width = 720;
         canvasElement.height = 100;
         canvasElement.classList.add(`Gradient-canvas-${type}`);
         gradientsCanvasElement.appendChild(canvasElement);
